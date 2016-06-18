@@ -9,5 +9,6 @@ func HelloWord() string {
 
 func main() {
 	val := HelloWord()
-	fmt.Println(val)
+	fmt.Println(val, "hoge")
+	fmt.Println(val, "hoge", "hage")
 }
