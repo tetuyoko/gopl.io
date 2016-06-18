@@ -1,0 +1,3 @@
+package: github.com/tetuyoko/gopl.io/ch1
+import:
+  - package: "github.com/stretchr/testify/assert"

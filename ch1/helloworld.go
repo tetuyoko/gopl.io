@@ -2,6 +2,12 @@ package main
 
 import "fmt"
 
+func HelloWord() string {
+	val := "Hello, 世界"
+	return val
+}
+
 func main() {
-	fmt.Println("Hello, 世界中")
+	val := HelloWord()
+	fmt.Println(val)
 }
