@@ -22,3 +22,10 @@ _testmain.go
 *.exe
 *.test
 *.prof
+
+TAGS
+.TAGS
+!TAGS/
+tags
+.tags
+!tags/
