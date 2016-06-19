@@ -20,12 +20,13 @@ func main() {
 		}
 		//b, err := ioutil.ReadAll(resp.Body)
 		nbytes, err := io.Copy(os.Stdout, resp.Body)
+		stcod := resp.StatusCode
 		resp.Body.Close()
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "fetch: reading %s: %v\n", url, err)
 			os.Exit(1)
 		}
 		//fmt.Printf("%s", b)
-		fmt.Printf("%7d", nbytes)
+		fmt.Printf("statuscode: %d, byte size: %7d", stcod, nbytes)
 	}
 }
